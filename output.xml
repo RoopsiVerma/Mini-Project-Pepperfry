@@ -1,196 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220511 22:32:24.092" rpa="false" schemaversion="3">
-<suite id="s1" name="Verify Valid Credential" source="D:\MiniProject\login_suite\verify_valid_credential.robot">
-<test id="s1-t1" name="login_test" line="11">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220512 11:23:57.483" rpa="false" schemaversion="3">
+<suite id="s1" name="LED light" source="D:\MiniProject\create_acount_suite\LED_light.robot">
+<test id="s1-t1" name="test1" line="8">
 <kw name="Launch Browser" library="common_functionality" type="SETUP">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <arg>Path</arg>
 <arg>${EXECDIR}${/}driver</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220511 22:32:25.920" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Users\hp\.ipython;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin;bin\com.pantech.myModule;C:\Users\hp\eclipse-workspace;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hp\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python310\;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;D:\MiniProject\driver'.</msg>
-<status status="PASS" starttime="20220511 22:32:25.920" endtime="20220511 22:32:25.920"/>
+<msg timestamp="20220512 11:23:57.922" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Users\hp\.ipython;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin;bin\com.pantech.myModule;C:\Users\hp\eclipse-workspace;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hp\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python310\;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;D:\MiniProject\driver'.</msg>
+<status status="PASS" starttime="20220512 11:23:57.922" endtime="20220512 11:23:57.922"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220511 22:32:25.920" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220511 22:32:25.920" endtime="20220511 22:32:27.988"/>
+<msg timestamp="20220512 11:23:57.922" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220512 11:23:57.922" endtime="20220512 11:23:59.938"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220511 22:32:27.988" endtime="20220511 22:32:28.264"/>
+<status status="PASS" starttime="20220512 11:23:59.938" endtime="20220512 11:24:00.185"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220511 22:32:28.264" endtime="20220511 22:32:28.279"/>
+<status status="PASS" starttime="20220512 11:24:00.185" endtime="20220512 11:24:00.187"/>
 </kw>
 <kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <arg>${EXECDIR}${/}screenshot</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220511 22:32:28.279" endtime="20220511 22:32:28.279"/>
+<status status="PASS" starttime="20220512 11:24:00.188" endtime="20220512 11:24:00.191"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220511 22:32:28.279" level="INFO">Opening url 'https://www.pepperfry.com/'</msg>
-<status status="PASS" starttime="20220511 22:32:28.279" endtime="20220511 22:32:36.131"/>
+<msg timestamp="20220512 11:24:00.192" level="INFO">Opening url 'https://www.pepperfry.com/'</msg>
+<status status="PASS" starttime="20220512 11:24:00.191" endtime="20220512 11:24:09.631"/>
 </kw>
-<status status="PASS" starttime="20220511 22:32:25.904" endtime="20220511 22:32:36.132"/>
-</kw>
-<kw name="Valid Credential Template">
-<arg>roohv26@gmail.com</arg>
-<arg>rooh26@#</arg>
-<arg>Log In</arg>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=(//a[@id='registerPopupLink'])[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220511 22:32:36.139" level="INFO">Clicking element 'xpath=(//a[@id='registerPopupLink'])[1]'.</msg>
-<status status="PASS" starttime="20220511 22:32:36.139" endtime="20220511 22:32:36.578"/>
+<status status="PASS" starttime="20220512 11:23:57.922" endtime="20220512 11:24:09.631"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//a[@data-modal="loginModal"]</arg>
+<arg>link=Bedroom</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220511 22:32:36.580" level="INFO">Clicking element 'xpath=//a[@data-modal="loginModal"]'.</msg>
-<status status="PASS" starttime="20220511 22:32:36.579" endtime="20220511 22:32:37.122"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=user[new]</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220511 22:32:37.123" level="INFO">Typing text 'roohv26@gmail.com' into text field 'name=user[new]'.</msg>
-<status status="PASS" starttime="20220511 22:32:37.122" endtime="20220511 22:32:37.888"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id=password</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220511 22:32:37.891" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg timestamp="20220511 22:32:37.990" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220511 22:32:38.140" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220511 22:32:37.888" endtime="20220511 22:32:38.140"/>
+<msg timestamp="20220512 11:24:09.637" level="INFO">Clicking element 'link=Bedroom'.</msg>
+<status status="PASS" starttime="20220512 11:24:09.636" endtime="20220512 11:24:14.847"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>id=formSubmit-popup_login_username_form</arg>
+<arg>link= Bright &amp; Blooming</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220511 22:32:38.141" level="INFO">Clicking element 'id=formSubmit-popup_login_username_form'.</msg>
-<status status="PASS" starttime="20220511 22:32:38.141" endtime="20220511 22:32:41.335"/>
+<msg timestamp="20220512 11:24:14.848" level="INFO">Clicking element 'link= Bright &amp; Blooming'.</msg>
+<status status="PASS" starttime="20220512 11:24:14.848" endtime="20220512 11:24:20.314"/>
 </kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>${expected_value}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220511 22:32:52.474" level="INFO">Current page contains text 'Log In'.</msg>
-<status status="PASS" starttime="20220511 22:32:41.336" endtime="20220511 22:32:52.475"/>
-</kw>
-<status status="PASS" starttime="20220511 22:32:36.137" endtime="20220511 22:32:52.475"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Blue Polyester Floral 950 GSM Double Bed Comfortor</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220512 11:24:20.342" level="INFO">Clicking element 'link=Blue Polyester Floral 950 GSM Double Bed Comfortor'.</msg>
+<status status="PASS" starttime="20220512 11:24:20.340" endtime="20220512 11:24:22.589"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220511 22:32:52.476" endtime="20220511 22:32:55.019"/>
+<status status="PASS" starttime="20220512 11:24:22.590" endtime="20220512 11:24:29.069"/>
 </kw>
-<status status="PASS" starttime="20220511 22:32:25.904" endtime="20220511 22:32:55.019"/>
+<status status="PASS" starttime="20220512 11:23:57.920" endtime="20220512 11:24:29.071"/>
 </test>
-<test id="s1-t2" name="login_test" line="11">
-<kw name="Launch Browser" library="common_functionality" type="SETUP">
-<kw name="Append To Environment Variable" library="OperatingSystem">
-<arg>Path</arg>
-<arg>${EXECDIR}${/}driver</arg>
-<doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220511 22:32:55.019" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\MinGW\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Users\hp\.ipython;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin;bin\com.pantech.myModule;C:\Users\hp\eclipse-workspace;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hp\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python310\;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;D:\MiniProject\driver;D:\MiniProject\driver'.</msg>
-<status status="PASS" starttime="20220511 22:32:55.019" endtime="20220511 22:32:55.019"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220511 22:32:55.019" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220511 22:32:55.019" endtime="20220511 22:32:57.042"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220511 22:32:57.042" endtime="20220511 22:32:57.220"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220511 22:32:57.220" endtime="20220511 22:32:57.220"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}screenshot</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220511 22:32:57.220" endtime="20220511 22:32:57.220"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220511 22:32:57.220" level="INFO">Opening url 'https://www.pepperfry.com/'</msg>
-<status status="PASS" starttime="20220511 22:32:57.220" endtime="20220511 22:33:04.613"/>
-</kw>
-<status status="PASS" starttime="20220511 22:32:55.019" endtime="20220511 22:33:04.613"/>
-</kw>
-<kw name="Valid Credential Template">
-<arg>hey123@gmail.com</arg>
-<arg>yu56778</arg>
-<arg>Log In</arg>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=(//a[@id='registerPopupLink'])[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220511 22:33:04.622" level="INFO">Clicking element 'xpath=(//a[@id='registerPopupLink'])[1]'.</msg>
-<msg timestamp="20220511 22:33:05.268" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot/selenium-screenshot-32.png"&gt;&lt;img src="screenshot/selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220511 22:33:05.270" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
-  (Session info: chrome=101.0.4951.54)
-</msg>
-<status status="FAIL" starttime="20220511 22:33:04.622" endtime="20220511 22:33:05.273"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//a[@data-modal="loginModal"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220511 22:33:05.274" endtime="20220511 22:33:05.274"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=user[new]</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220511 22:33:05.274" endtime="20220511 22:33:05.274"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id=password</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220511 22:33:05.275" endtime="20220511 22:33:05.275"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=formSubmit-popup_login_username_form</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220511 22:33:05.275" endtime="20220511 22:33:05.275"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>${expected_value}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" starttime="20220511 22:33:05.275" endtime="20220511 22:33:05.275"/>
-</kw>
-<status status="FAIL" starttime="20220511 22:33:04.621" endtime="20220511 22:33:05.277"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220511 22:33:05.282" endtime="20220511 22:33:09.314"/>
-</kw>
-<status status="FAIL" starttime="20220511 22:32:55.019" endtime="20220511 22:33:09.314">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
-  (Session info: chrome=101.0.4951.54)
-</status>
-</test>
-<status status="FAIL" starttime="20220511 22:32:24.108" endtime="20220511 22:33:09.314"/>
+<status status="PASS" starttime="20220512 11:23:57.501" endtime="20220512 11:24:29.072"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="1" skip="0" id="s1" name="Verify Valid Credential">Verify Valid Credential</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="LED light">LED light</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220511 22:32:55.019" level="WARN">Multiple tests with name 'login_test' executed in suite 'Verify Valid Credential'.</msg>
 </errors>
 </robot>
