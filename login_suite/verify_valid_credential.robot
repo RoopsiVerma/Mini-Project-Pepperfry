@@ -13,7 +13,7 @@ login_test
 *** Keywords ***
 Valid Credential Template
     [Arguments]     ${username}     ${password}     ${expected_value}
-    Click Element    xpath=(//a[@id='registerPopupLink'])[1]
+    #Click Element    xpath=(//a[@id='registerPopupLink'])[1]
     Click Element    xpath=//a[@data-modal="loginModal"]
     Input Text    name=user[new]   ${username}
     Input Password    id=password    ${password}
